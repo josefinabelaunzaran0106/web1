@@ -1,0 +1,323 @@
+/* estilo header mobile first*/
+body {
+    background-color: #AEB6AB;
+}
+header {
+    background-color: #AEB6AB;
+    display: flex;
+    width: 100%;
+}
+.titulo {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.titulo a {
+    text-decoration: none;
+    color: black;
+    text-align: center;
+}
+/*estilo navegador mobile first */
+#btn-menu {
+    color: black;
+    padding: 15px;
+    font-size: 30px;
+    width: 100%;
+    background-color: #748A6B;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+}
+.menuSitio {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    background-color: #748A6B;
+}
+ul.menuSitio {
+    width: 100%;
+    margin: 0px;
+    padding: 0px;
+    display: none;
+}
+ul.menuSitio.show {
+    display: flex;
+}
+ul.menuSitio li {
+    list-style: none;
+    font-size: 30px;
+    margin: 0px 0px;
+    padding: 15px 20px;
+    background-color: #AEB6AB;
+    border-radius: 10px;
+}
+ul.menuSitio li a {
+    text-decoration: none;
+    color: black;
+}
+ul.menuSitio li:hover {
+    background-color: #687164;
+}
+/* estilo index principal mobile first: */
+.historia_contenedor {
+    display: flex;
+    flex-direction: column;
+    padding: 6px;
+    width: 99%;
+    background-color: #D3CBC6;
+}
+.historia_centro {
+    display: flex;
+    flex-direction: column;
+    text-align: justify;
+}
+.consultorio1 {
+    width: 100%;
+}
+.asistencia_contenedor {
+    display: flex;
+    flex-direction: column;
+    padding: 6px;
+    width: 99%;
+    border-top: black solid 2px;
+    background-color: #D3CBC6;
+}
+.asistencia_centro {
+    display: flex;
+    flex-direction: column;
+    text-align: justify;
+}
+.consultorio2 {
+    width: 100%;
+}
+figure {
+    display: flexbox;
+    justify-content: center;
+}
+p {
+    text-align: justify;
+}
+h2 {
+    text-align:left;
+}
+/*estilo cartilla mobile first */
+.profesionales {
+    display: flex;
+    width: 100%;
+    flex-direction: row;
+    justify-content: space-around;
+    background-color: #D3CBC6;
+    font-size: 20px;
+    border-bottom: 3px solid rgb(118, 112, 112);
+}
+.centro_cartilla {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    justify-content: space-around;
+    background-color: #D3CBC6;
+    height: 60%;
+    width: 100%;
+}
+.columna {
+    display: flex;
+    flex-direction: column;
+    margin: 10px;
+    width: 100%;
+    height: 60%;
+}
+.doctor {
+    display: flex;
+    flex-direction: column;
+    padding: 10px;
+    margin: 10px;
+    border: 3px solid rgb(118, 112, 112);
+    justify-content: center;
+}
+.foto_doctor {
+    height: 150px;
+    width: 150px;
+    align-self: center;
+}
+h3 {
+    font-size: 30px;
+}
+.tabla{
+    border: 3px solid rgb(118, 112, 112);
+}
+td {
+    border: 1px solid rgb(182, 177, 177);
+    font-size: 20px;
+}
+.datos_doctor {
+    font-size: 20px;
+    font-family: 'Times New Roman', Times, serif;
+}
+/*estilo turnos: */
+#titulo_turnos {
+    text-align:left;
+    font-size: 40px;
+}
+.solicitud_turnos {
+    display: flex;
+    flex-direction: column;
+    justify-content:flex-start;
+    margin-top: 2%;
+    margin-bottom: 2%;
+    padding: 10px;
+    border-radius: 10px;
+    background-color: #c7c0bb;  
+    border: #748A6B 2px solid;
+}
+.mostrar-tabla{
+    display: flex;
+    flex-direction: column;
+    justify-content:flex-start;
+    margin-top: 2%;
+    margin-bottom: 2%;
+    padding: 10px;
+    background-color: #c7c0bb;  
+    border: #748A6B 2px solid;
+    border-radius: 10px;
+    margin: 10px;
+}
+
+#img-captcha {
+    height: 50px;
+}
+#boton-captcha {
+    width: 30px;
+}
+.boton-oculto {
+    display: none;
+}
+.tabla-oculta{
+    display: none;
+}
+#listadoTurnos{
+    display: flex;
+    flex-wrap: wrap;
+}
+.turnos {
+    border-radius: 10px;
+    border: solid rgb(118, 112, 112) 2px;
+    padding: 10px;
+    margin: 10px;
+    width: 300px;
+}
+.tabla-dinamica{
+    margin-top: 2%;
+    margin-bottom: 2%;
+    padding: 10px;
+    border-radius: 10px;
+    margin: 10px;
+    border:#748A6B 2px solid;
+}
+/* estilo footer mobile first: */
+footer {
+    display: flex;
+    flex-direction: column;
+    background-color: #AEB6AB;
+    padding-top: 10px;
+    padding-bottom: 20px;
+}
+.contacto {
+    display: flex;
+    flex-direction: column;
+    font-size: 20px;
+}
+.redes_sociales {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+}
+.foto_facebook {
+    height: 80px;
+    width: 80px;
+    margin-left: 10px;
+}
+.foto_instagram {
+    height: 80px;
+    width: 80px;
+    margin-right: 10px;
+}
+.mapa {
+    width: 100%;
+}
+
+/*diseño para pantalla >= 660px*/
+@media only screen and (min-width: 660px) {
+    /*header*/   
+    header {    
+        height: 180px;
+    }
+    .titulo a {
+        font-size: 3.5rem;
+    }
+    .titulo {
+        width: 100%;
+    }
+    /*nav*/
+    #btn-menu {
+        display: none;
+    }
+    ul.menuSitio {
+        display: flex;
+        flex-direction: row;
+        height: 40px;
+        padding-top: 20px;
+        width: 92%;
+        align-items: center;
+        justify-content: space-between;
+        padding: 4%;  
+    }
+    /*index*/
+    .historia_contenedor {
+        flex-direction: row;
+    }
+    .asistencia_contenedor {
+        flex-direction: row;
+    }
+    figure {
+        width: 40%;
+    }
+    .historia_centro {
+        width: 60%;
+    }
+    .asistencia_centro {
+        width: 60%;
+    }
+    /*cartilla*/
+    .profesionales {
+        font-size: 35px;
+    }
+    .centro_cartilla {
+        flex-direction: row;
+    }
+    h3 {
+        text-align: center;
+        font-size: 25px;
+    }
+    /*turnos*/
+    .centro_turnos{
+        background-color: #D3CBC6;
+    }
+    .solicitud_turnos{
+        width: 40%;
+        margin-left: 25%;
+    }
+    .mostrar-tabla{
+        width: 40%;
+        margin-left: 25%;
+    }
+    /*footer*/
+    footer {
+        flex-direction: row;
+    }
+    .contacto {
+        width: 60%;
+    }
+}
+
+
+

@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Turnos</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body>
+
+    <header>
+        <h1 class="titulo"><a href="index.html">CONSULTORIO PEDIATRICO TANDIL</a></h1>
+    </header>
+
+    <nav>
+        <button type="button" id="btn-menu">MENÚ</button>
+        <ul class="menuSitio">
+            <li class="btn"><a href="cartilla.html">CARTILLA</a></li>
+            <li class="btn"><a href="turnos.html">TURNOS</a></li>
+            <li class="btn"><a href="#infoContacto">CONTACTO</a> </li>
+        </ul>
+    </nav>
+
+    <section class="centro_turnos">
+        <div id="solicitud-turnos" class="solicitud_turnos">
+            <h1 id="titulo_turnos">SOLICITUD DE TURNOS</h1>
+            <form id="form" class="formulario">
+                <h2>Complete sus datos: </h2>
+                <p>Nombre y apellido: </p>
+                <input type="text" name="nombreApellido" id="nombre" placeholder="Juan Lopez" required>
+                <p> DNI: </p>
+                <input type="text" name="dni" placeholder="3333333" required>
+                <p>Obra Social: </p>
+                <input type="radio" name="ObraSocial" value="Si" required>Si
+                <input type="radio" name="ObraSocial" value="No" required>No
+                <p>Si su respuesta es si, complete el nombre de su Obra social: </p>
+                <input type="text" name="nombreObraSocial" id="obraSocial" placeholder="IOMA">
+                <p>Telefono: </p>
+                <input type="text" name="telefono" placeholder="249-444444" required>
+                <div class="cont_captcha">
+                    <div class="btn_img">
+                        <img id="img-captcha" src="images/captcha/0.jpg" alt="captcha">
+                        <button type="button" id="cambia-captcha"><img src="images/RecaptchaLogo.jpg" id="boton-captcha"
+                                alt="cambiar captcha"></button>
+                    </div>
+                    <div>
+                        <input id="codigo-ingresado" type="text" /> Ingrese código captcha
+                    </div>
+                    <div>
+                        <button type="button" id="boton-verificar">verificar</button>
+                    </div>
+                    <div>
+                        <p id="mensaje-captcha"></p>
+                    </div>
+                    <div id="boton-oculto" class="boton-oculto">
+                        <button type="submit" id="boton-enviar">enviar</button>
+                    </div>
+                </div>
+            </form>
+        </div>
+        <div id="tabla-oculta" class="tabla-oculta">
+            <h2 class="bienvenido"></h2>
+            <p>SELECCIONE UN MEDICO</p>
+            <select id="doctor">
+                <option value="0" id="doc1">Dr. Julio Garcia</option>
+                <option value="1" id="doc2">Dra. Sofia Rodriguez</option>
+                <option value="2" id="doc3">Dr. Juan Martinez</option>
+                <option value="3" id="doc4">Dr. Pablo Gomez</option>
+                <option value="4" id="doc5">Dra. Julia Gonzalez</option>
+                <option value="5" id="doc6">Dr. Manuel Garcia</option>
+            </select>
+            <button id="btn-mostrarHorario">Horarios</button>
+            <p id="opcionHorario">
+            </p>
+            <P>SELECCIONE UN DIA Y HORARIO:</P>
+            <input type="datetime-local" id="dia">
+            <p id="mensajeDia"></p>
+            <div class="tabla-dinamica">
+                <table>
+                    <thead>
+                        <tr>
+                            <th>
+                                Medico
+                            </th>
+                            <th>
+                                Dia Horario
+                            </th>
+                            <th>
+                                Cantidad de Turnos
+                            </th>
+                        </tr>
+                    </thead>
+                    <tbody id="tabla-turnos">
+                    </tbody>
+                </table>
+                <button type="button" id="btn-unTurno">Un Turno</button>
+                <button type="button" id="btn-dosTurnos">Dos Turnos</button>
+                <button type="button" id="btn-tresTurnos">Tres Turnos</button>
+                <button type="button" id="btn-borrarUltimo">Borrar ultimo</button>
+                <button type="button" id="btn-borrarTodos">Borrar todos</button>
+            </div>
+        </div>
+    </section>
+
+    <footer>
+        <div class="contacto">
+            <h2 id="infoContacto">Información de contacto</h2>
+            <ul>
+                <li>Teléfono: +549 249 411 5555</li>
+                <li>email: info@consultoriotandil.com</li>
+                <li>Sarmiento 1400 - Tandil</li>
+                <li>Nuestras Redes Sociales:</li>
+            </ul>
+            <div class="redes_sociales">
+                <a href="https://www.instagram.com/" target="_blank"><img class="foto_instagram"
+                        src="images/instagram.jpg" alt="Instagram"></a>
+                <a href="https://www.facebook.com/" target="_blank"> <img class="foto_facebook"
+                        src="images/facebook.jpg" alt="Facebook"></a>
+            </div>
+        </div>
+        <figure>
+            <img src="images/mapa.jpg" class="mapa" alt="ubicacion en el mapa">
+        </figure>
+    </footer>
+
+    <script type="text/javascript" src="Js/main.js"></script>
+    <script type="text/javascript" src="Js/turnos.js"></script>
+
+</body>
+</html>
